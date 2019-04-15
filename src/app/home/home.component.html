@@ -1,3 +1,4 @@
 <div *ngFor="let todo of todos" [ngClass]="{ 'completed': todo.completed}">
-  {{todo.title}}
+<!--  <span>{{todo.title}}</span>-->
+  <a [routerLink]="['/details', todo.id]">{{todo.title}}</a>
 </div>

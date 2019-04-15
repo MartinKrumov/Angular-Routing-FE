@@ -1,0 +1,19 @@
+<ng-template #todoDetail>
+  <ul>
+    <li>
+      <span>Id: {{todo.id}}</span>
+    </li>
+    <li>
+      <span>Title: {{todo.title}}</span>
+    </li>
+    <li>
+      <span>Completed: {{todo.completed}}</span>
+    </li>
+  </ul>
+</ng-template>
+
+<ng-template #isLoading>Loading...</ng-template>
+
+<div>
+  <ng-container *ngIf="todo then todoDetail; else isLoading"></ng-container>
+</div>

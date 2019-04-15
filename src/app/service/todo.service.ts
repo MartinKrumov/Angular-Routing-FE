@@ -14,4 +14,8 @@ export class TodoService {
   getTodos() {
     return this.http.get<ITodo[]> ('https://jsonplaceholder.typicode.com/todos');
   }
+
+  getTodoById(id: number) {
+    return this.http.get<ITodo>(`https://jsonplaceholder.typicode.com/todos/${id}`);
+  }
 }

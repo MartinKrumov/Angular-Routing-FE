@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from '@angular/router';
 import {ITodo} from '../interfaces';
-import {Observable} from 'rxjs';
 import {TodoService} from '../service/todo.service';
 import {tap} from 'rxjs/operators';
 
