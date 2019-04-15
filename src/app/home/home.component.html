@@ -1,0 +1,3 @@
+<div *ngFor="let todo of todos" [ngClass]="{ 'completed': todo.completed}">
+  {{todo.title}}
+</div>
