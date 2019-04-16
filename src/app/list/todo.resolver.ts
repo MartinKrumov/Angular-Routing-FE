@@ -7,7 +7,7 @@ import {tap} from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class HomeResolver implements Resolve<ITodo[]> {
+export class TodoResolver implements Resolve<ITodo[]> {
   constructor(private todoService: TodoService) {
   }
 

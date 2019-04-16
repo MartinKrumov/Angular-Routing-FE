@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {ITodo} from '../interfaces';
-import {ActivatedRoute} from '@angular/router';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +6,6 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  todos: Array<ITodo> = [];
-
-  constructor(private activeRoute: ActivatedRoute) {
-    this.todos = this.activeRoute.snapshot.data[0];
-  }
 
   ngOnInit() {
   }
