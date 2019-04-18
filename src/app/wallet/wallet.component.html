@@ -1,0 +1,21 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Initial Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let wallet of walletDTOs; let i = index;">
+      <td>{{ i }}</td>
+      <td>
+        <a [routerLink]="['wallets/details', wallet.id]">{{wallet.name}}</a>
+      </td>
+      <td>{{ wallet.amount }}</td>
+      <td>{{ wallet.initialAmount }}</td>
+    </tr>
+  </tbody>
+</table>
+

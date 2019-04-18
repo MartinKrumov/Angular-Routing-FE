@@ -6,11 +6,13 @@ import {TodoResolver} from './list/todo.resolver';
 import {DetailComponent} from './detail/detail.component';
 import {ListComponent} from './list/list.component';
 import {NotFoundComponent} from './not-found/not-found.component';
+import {WalletComponent} from './wallet/wallet.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'wallets', component: WalletComponent},
   {
     path: 'todo',
     children: [

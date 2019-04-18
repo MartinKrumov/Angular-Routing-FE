@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {DetailComponent} from './detail/detail.component';
 import {ListComponent} from './list/list.component';
 import {NotFoundComponent} from './not-found/not-found.component';
+import {WalletComponent} from './wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {NotFoundComponent} from './not-found/not-found.component';
     AboutComponent,
     DetailComponent,
     ListComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    WalletComponent
   ],
   imports: [
     BrowserModule,
