@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "docker-build": "docker build -t finance-tracker-ui .",
+    "build-app-and-image": "(npm run build) && (npm run docker-build)"
   },
   "private": true,
   "dependencies": {
